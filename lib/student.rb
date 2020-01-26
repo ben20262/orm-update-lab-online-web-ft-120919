@@ -60,7 +60,7 @@ class Student
       WHERE students.name = ?
     SQL
     array = DB[:conn].execute(sql, name)
-    puts array
+    P array
     Student.new_from_db(array)
   end
 
