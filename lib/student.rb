@@ -57,7 +57,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE students.name = ?
+      WHERE name = ?
     SQL
     array = DB[:conn].execute(sql, name)
     p array
